@@ -13,6 +13,7 @@
 
 Route::get('', [ 'uses' => 'ExportController@welcome', 'as' => 'home'] );
 Route::get('view', [ 'uses' => 'ExportController@viewStudents', 'as' => 'view'] );
+Route::get('history', [ 'uses' => 'ExportController@exportHistory', 'as' => 'history'] );
 Route::post('export', [ 'uses' => 'ExportController@export', 'as' => 'export'] );
 
 // Optional extra
